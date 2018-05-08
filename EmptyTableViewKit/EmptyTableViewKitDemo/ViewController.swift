@@ -1,8 +1,8 @@
 //
 //  ViewController.swift
-//  EmptyTableViewKit
+//  EmptyTableViewKitDemo
 //
-//  Created by Apple on 2018/5/4.
+//  Created by Apple on 2018/5/7.
 //  Copyright © 2018年 Apple. All rights reserved.
 //
 
