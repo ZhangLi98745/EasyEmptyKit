@@ -38,6 +38,10 @@ public protocol EmptyTableViewKitDataSource : class {
     
     func sectionsToIgnore(in view: UIView) -> [Int]?
     
+    /// 空白状态下显示的详细文本
+    ///
+    /// - Parameter view: 文本的父视图
+    /// - Returns: 生成的富文本
     func descriptionForEmpty(in view: UIView) -> NSAttributedString?
 }
 

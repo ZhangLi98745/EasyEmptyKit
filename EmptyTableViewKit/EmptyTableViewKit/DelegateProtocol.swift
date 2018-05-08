@@ -17,6 +17,11 @@ public protocol EmptyTableViewDelegate : class {
     ///   - view: 空白视图的父视图
     func emptyButton(_ button: UIButton, tappedIn view: UIView)
     
+    /// 空白区域点击
+    ///
+    /// - Parameters:
+    ///   - emptyView: 点击的视图
+    ///   - view: 点击视图的父视图
     func emptyView(_ emptyView: UIView, tappedIn view: UIView)
 
     
@@ -25,6 +30,6 @@ public protocol EmptyTableViewDelegate : class {
 public extension EmptyTableViewDelegate {
     func emptyButton(_ button: UIButton, tappedIn view: UIView) {
     }
-    func emptyView(_ emptyView: UIView, tappedIn view: UIView){
+    func emptyView(_ emptyView: UIView, tappedIn view: UIView) {
     }
 }

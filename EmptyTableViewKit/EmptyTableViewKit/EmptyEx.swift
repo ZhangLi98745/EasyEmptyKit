@@ -164,9 +164,10 @@ public extension Empty where Base : UIScrollView {
         guard let emptyView = objc_getAssociatedObject(base, &emptyViewKey) as? EmptyView else {
             return
         }
+        emptyView.prepareForReuse()
         emptyView.removeFromSuperview()
         self.emptyView = nil
-        base.isScrollEnabled = false
+        base.isScrollEnabled = true
     }
     
     fileprivate func setupEmptyView(withItemsCount itemCount : Int) -> Bool {
@@ -218,11 +219,11 @@ public extension Empty where Base : UIScrollView {
         view.horizontalSpace = 20
         view.minimumButtonWidth = 120
         view.fadeInOnDisplay = true
-        view.isHidden = true
+        view.isHidden = false
         view.clipsToBounds = true
         view.autoInset = true
         view.setupConstraints()
-        return false
+        return true
     }
   
 }

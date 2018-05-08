@@ -117,23 +117,15 @@
 		187F3C9B20A038F0007EAE54 /* EmptyTableViewKit */ = {
 			isa = PBXGroup;
 			children = (
-				187F3CA720A03927007EAE54 /* Protocol */,
-				187F3C9C20A038F0007EAE54 /* EmptyTableViewKit.h */,
-				187F3C9D20A038F0007EAE54 /* Info.plist */,
-			);
-			path = EmptyTableViewKit;
-			sourceTree = "<group>";
-		};
-		187F3CA720A03927007EAE54 /* Protocol */ = {
-			isa = PBXGroup;
-			children = (
 				187F3CA820A03964007EAE54 /* DelegateProtocol.swift */,
 				187F3CAA20A03975007EAE54 /* DataSourceProtocol.swift */,
 				187F3CAC20A041AA007EAE54 /* Empty.swift */,
 				187F3CAE20A04615007EAE54 /* EmptyEx.swift */,
 				18910E6A20A1984800955A6D /* EmptyView.swift */,
+				187F3C9C20A038F0007EAE54 /* EmptyTableViewKit.h */,
+				187F3C9D20A038F0007EAE54 /* Info.plist */,
 			);
-			path = Protocol;
+			path = EmptyTableViewKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
