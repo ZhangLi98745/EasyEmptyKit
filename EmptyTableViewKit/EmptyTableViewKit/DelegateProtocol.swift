@@ -23,13 +23,16 @@ public protocol EmptyTableViewDelegate : class {
     ///   - emptyView: 点击的视图
     ///   - view: 点击视图的父视图
     func emptyView(_ emptyView: UIView, tappedIn view: UIView)
-
     
+    func emptyViewIsDisplay() -> Bool
 }
 
 public extension EmptyTableViewDelegate {
     func emptyButton(_ button: UIButton, tappedIn view: UIView) {
     }
     func emptyView(_ emptyView: UIView, tappedIn view: UIView) {
+    }
+    func emptyViewIsDisplay() -> Bool {
+        return true
     }
 }

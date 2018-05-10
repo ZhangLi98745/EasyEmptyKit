@@ -16,6 +16,7 @@ private var emptyViewKey: Void?
 private var customViewKey: Void?
 private var datasourceMakerKey: Void?
 private let emptyImageViewAnimationKey = "emptyImageViewAnimationKey"
+private var reloadTimeKey = "reloadTimeKey"
 
 fileprivate extension UIScrollView {
     static func swizzle(originSelector : Selector , to newSelector : Selector) -> Void {
@@ -142,6 +143,15 @@ public extension Empty where Base : UIScrollView {
         }
         return 0
     }
+    
+    fileprivate var reloadTime : Int? {
+        get {
+            return objc_getAssociatedObject(base, &reloadTimeKey) as? Int
+        }
+        set {
+            objc_setAssociatedObject(base, &reloadTimeKey, newValue, .OBJC_ASSOCIATION_ASSIGN)
+        }
+    }
 }
 
 public extension Empty where Base : UIScrollView {
@@ -172,13 +182,16 @@ public extension Empty where Base : UIScrollView {
     
     fileprivate func setupEmptyView(withItemsCount itemCount : Int) -> Bool {
         guard let dataSource = dataSource,itemCount == 0 else {
+            invalidata()
+            return false
+        }
+        
+        if let shoudldDisplay = delegate?.emptyViewIsDisplay(), shoudldDisplay == false {
+            invalidata()
             return false
         }
         
         guard let view = emptyView else {
-            return false
-        }
-        if let delegate = delegate {
             invalidata()
             return false
         }
@@ -219,7 +232,7 @@ public extension Empty where Base : UIScrollView {
         view.horizontalSpace = 20
         view.minimumButtonWidth = 120
         view.fadeInOnDisplay = true
-        view.isHidden = false
+        view.isHidden = true
         view.clipsToBounds = true
         view.autoInset = true
         view.setupConstraints()
