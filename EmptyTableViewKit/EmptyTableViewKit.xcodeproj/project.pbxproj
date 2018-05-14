@@ -10,23 +10,17 @@
 		1810EFF320A4102F00BF4C2A /* EasyEmptyKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 1810EFF120A4102F00BF4C2A /* EasyEmptyKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1810EFF620A4102F00BF4C2A /* EasyEmptyKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1810EFEF20A4102E00BF4C2A /* EasyEmptyKit.framework */; };
 		1810EFF720A4102F00BF4C2A /* EasyEmptyKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1810EFEF20A4102E00BF4C2A /* EasyEmptyKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		1810EFFD20A4106E00BF4C2A /* EasyEmptyDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1810EFFC20A4106E00BF4C2A /* EasyEmptyDelegate.swift */; };
-		1810EFFF20A410A500BF4C2A /* EasyEmptyDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1810EFFE20A410A500BF4C2A /* EasyEmptyDataSource.swift */; };
-		1810F00120A4129900BF4C2A /* EasyEmptyKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1810F00020A4129900BF4C2A /* EasyEmptyKit.swift */; };
-		1810F00420A417BD00BF4C2A /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1810F00320A417BD00BF4C2A /* EmptyView.swift */; };
 		187F3C8620A0386B007EAE54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187F3C8520A0386B007EAE54 /* AppDelegate.swift */; };
 		187F3C8820A0386B007EAE54 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187F3C8720A0386B007EAE54 /* ViewController.swift */; };
 		187F3C8B20A0386B007EAE54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187F3C8920A0386B007EAE54 /* Main.storyboard */; };
 		187F3C8D20A0386D007EAE54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 187F3C8C20A0386D007EAE54 /* Assets.xcassets */; };
 		187F3C9020A0386D007EAE54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187F3C8E20A0386D007EAE54 /* LaunchScreen.storyboard */; };
-		187F3C9E20A038F0007EAE54 /* EmptyTableViewKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 187F3C9C20A038F0007EAE54 /* EmptyTableViewKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		187F3CA120A038F0007EAE54 /* EmptyTableViewKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 187F3C9A20A038F0007EAE54 /* EmptyTableViewKit.framework */; };
 		187F3CA220A038F0007EAE54 /* EmptyTableViewKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 187F3C9A20A038F0007EAE54 /* EmptyTableViewKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		187F3CA920A03964007EAE54 /* DelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187F3CA820A03964007EAE54 /* DelegateProtocol.swift */; };
-		187F3CAB20A03975007EAE54 /* DataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187F3CAA20A03975007EAE54 /* DataSourceProtocol.swift */; };
-		187F3CAD20A041AA007EAE54 /* Empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187F3CAC20A041AA007EAE54 /* Empty.swift */; };
-		187F3CAF20A04615007EAE54 /* EmptyEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187F3CAE20A04615007EAE54 /* EmptyEx.swift */; };
-		18910E6B20A1984800955A6D /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18910E6A20A1984800955A6D /* EmptyView.swift */; };
+		18A7FA4620A97E870040FB39 /* EmptyBackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A7FA4220A97E860040FB39 /* EmptyBackView.swift */; };
+		18A7FA4720A97E870040FB39 /* EasyEmptyKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A7FA4320A97E860040FB39 /* EasyEmptyKit.swift */; };
+		18A7FA4820A97E870040FB39 /* EasyEmptyKitProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A7FA4420A97E860040FB39 /* EasyEmptyKitProtocol.swift */; };
+		18A7FA4920A97E870040FB39 /* EmptyBackView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18A7FA4520A97E870040FB39 /* EmptyBackView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,10 +59,6 @@
 		1810EFEF20A4102E00BF4C2A /* EasyEmptyKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EasyEmptyKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1810EFF120A4102F00BF4C2A /* EasyEmptyKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EasyEmptyKit.h; sourceTree = "<group>"; };
 		1810EFF220A4102F00BF4C2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1810EFFC20A4106E00BF4C2A /* EasyEmptyDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyEmptyDelegate.swift; sourceTree = "<group>"; };
-		1810EFFE20A410A500BF4C2A /* EasyEmptyDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyEmptyDataSource.swift; sourceTree = "<group>"; };
-		1810F00020A4129900BF4C2A /* EasyEmptyKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyEmptyKit.swift; sourceTree = "<group>"; };
-		1810F00320A417BD00BF4C2A /* EmptyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
 		187F3C8320A0386B007EAE54 /* EmptyTableViewKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmptyTableViewKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		187F3C8520A0386B007EAE54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		187F3C8720A0386B007EAE54 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -77,13 +67,10 @@
 		187F3C8F20A0386D007EAE54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		187F3C9120A0386D007EAE54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		187F3C9A20A038F0007EAE54 /* EmptyTableViewKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EmptyTableViewKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		187F3C9C20A038F0007EAE54 /* EmptyTableViewKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmptyTableViewKit.h; sourceTree = "<group>"; };
-		187F3C9D20A038F0007EAE54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		187F3CA820A03964007EAE54 /* DelegateProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateProtocol.swift; sourceTree = "<group>"; };
-		187F3CAA20A03975007EAE54 /* DataSourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceProtocol.swift; sourceTree = "<group>"; };
-		187F3CAC20A041AA007EAE54 /* Empty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Empty.swift; sourceTree = "<group>"; };
-		187F3CAE20A04615007EAE54 /* EmptyEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyEx.swift; sourceTree = "<group>"; };
-		18910E6A20A1984800955A6D /* EmptyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
+		18A7FA4220A97E860040FB39 /* EmptyBackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyBackView.swift; sourceTree = "<group>"; };
+		18A7FA4320A97E860040FB39 /* EasyEmptyKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasyEmptyKit.swift; sourceTree = "<group>"; };
+		18A7FA4420A97E860040FB39 /* EasyEmptyKitProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasyEmptyKitProtocol.swift; sourceTree = "<group>"; };
+		18A7FA4520A97E870040FB39 /* EmptyBackView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmptyBackView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,37 +103,20 @@
 		1810EFF020A4102F00BF4C2A /* EasyEmptyKit */ = {
 			isa = PBXGroup;
 			children = (
-				1810F00020A4129900BF4C2A /* EasyEmptyKit.swift */,
-				1810F00220A4178D00BF4C2A /* View */,
-				1810EFFB20A4104700BF4C2A /* Protocol */,
+				18A7FA4320A97E860040FB39 /* EasyEmptyKit.swift */,
+				18A7FA4420A97E860040FB39 /* EasyEmptyKitProtocol.swift */,
+				18A7FA4220A97E860040FB39 /* EmptyBackView.swift */,
+				18A7FA4520A97E870040FB39 /* EmptyBackView.xib */,
 				1810EFF120A4102F00BF4C2A /* EasyEmptyKit.h */,
 				1810EFF220A4102F00BF4C2A /* Info.plist */,
 			);
 			path = EasyEmptyKit;
 			sourceTree = "<group>";
 		};
-		1810EFFB20A4104700BF4C2A /* Protocol */ = {
-			isa = PBXGroup;
-			children = (
-				1810EFFC20A4106E00BF4C2A /* EasyEmptyDelegate.swift */,
-				1810EFFE20A410A500BF4C2A /* EasyEmptyDataSource.swift */,
-			);
-			path = Protocol;
-			sourceTree = "<group>";
-		};
-		1810F00220A4178D00BF4C2A /* View */ = {
-			isa = PBXGroup;
-			children = (
-				1810F00320A417BD00BF4C2A /* EmptyView.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		186DE291209C42BD008B9D6C = {
 			isa = PBXGroup;
 			children = (
 				187F3C8420A0386B007EAE54 /* EmptyTableViewKitDemo */,
-				187F3C9B20A038F0007EAE54 /* EmptyTableViewKit */,
 				1810EFF020A4102F00BF4C2A /* EasyEmptyKit */,
 				186DE29B209C42BD008B9D6C /* Products */,
 			);
@@ -175,20 +145,6 @@
 			path = EmptyTableViewKitDemo;
 			sourceTree = "<group>";
 		};
-		187F3C9B20A038F0007EAE54 /* EmptyTableViewKit */ = {
-			isa = PBXGroup;
-			children = (
-				187F3CA820A03964007EAE54 /* DelegateProtocol.swift */,
-				187F3CAA20A03975007EAE54 /* DataSourceProtocol.swift */,
-				187F3CAC20A041AA007EAE54 /* Empty.swift */,
-				187F3CAE20A04615007EAE54 /* EmptyEx.swift */,
-				18910E6A20A1984800955A6D /* EmptyView.swift */,
-				187F3C9C20A038F0007EAE54 /* EmptyTableViewKit.h */,
-				187F3C9D20A038F0007EAE54 /* Info.plist */,
-			);
-			path = EmptyTableViewKit;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -204,7 +160,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				187F3C9E20A038F0007EAE54 /* EmptyTableViewKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,6 +270,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18A7FA4920A97E870040FB39 /* EmptyBackView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,10 +298,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1810F00420A417BD00BF4C2A /* EmptyView.swift in Sources */,
-				1810EFFD20A4106E00BF4C2A /* EasyEmptyDelegate.swift in Sources */,
-				1810F00120A4129900BF4C2A /* EasyEmptyKit.swift in Sources */,
-				1810EFFF20A410A500BF4C2A /* EasyEmptyDataSource.swift in Sources */,
+				18A7FA4720A97E870040FB39 /* EasyEmptyKit.swift in Sources */,
+				18A7FA4820A97E870040FB39 /* EasyEmptyKitProtocol.swift in Sources */,
+				18A7FA4620A97E870040FB39 /* EmptyBackView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,11 +317,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				187F3CAF20A04615007EAE54 /* EmptyEx.swift in Sources */,
-				18910E6B20A1984800955A6D /* EmptyView.swift in Sources */,
-				187F3CAB20A03975007EAE54 /* DataSourceProtocol.swift in Sources */,
-				187F3CA920A03964007EAE54 /* DelegateProtocol.swift in Sources */,
-				187F3CAD20A041AA007EAE54 /* Empty.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
