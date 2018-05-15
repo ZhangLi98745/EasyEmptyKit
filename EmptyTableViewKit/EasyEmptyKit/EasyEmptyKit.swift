@@ -60,13 +60,6 @@ extension UITableView {
             }
             strongSelf.emptyDelegate?.emptyTableViewData()?.emptyButtonPress(button)
         }
-
-//        self.emptyView?.didTappedEmptyView = { [weak self] in
-//            guard let strongSelf = self else {
-//                return
-//            }
-//            strongSelf.emptyDelegate?.emptyTableViewData()?.emptyViewTapped()
-//        }
     }
     
     weak var emptyDelegate : EasyEmptyKitProtocol? {
@@ -176,7 +169,6 @@ extension UITableView {
 
         view.isUserInteractionEnabled = true
         view.backgroundColor = .clear
-
         view.isHidden = false
         view.clipsToBounds = true
         view.param = model;
