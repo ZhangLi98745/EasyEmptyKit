@@ -44,12 +44,6 @@ class EmptyBackView: UIView {
         }
     }
     
-//    @objc func emptyViewTapped() {
-//        if didTappedEmptyView != nil {
-//            didTappedEmptyView!()
-//        }
-//    }
-    
     override func layoutSubviews() {
         super.layoutSubviews()
         button.layer.cornerRadius = button.frame.size.height / 2

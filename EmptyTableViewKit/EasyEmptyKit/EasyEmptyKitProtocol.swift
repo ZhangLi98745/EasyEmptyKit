@@ -13,8 +13,7 @@ struct EasyEmptyKitModel {
     var imageName : String?
     var buttonTitle : String?
     var buttonColor : UIColor?
-//    var emptyViewTapped : () -> Void
-    var emptyButtonPress : (UIButton) -> Void 
+    var emptyButtonPress : (UIButton) -> Void
 }
 
 protocol EasyEmptyKitProtocol : class {
@@ -24,5 +23,4 @@ protocol EasyEmptyKitProtocol : class {
     /// - Returns: 文字图片信息模型
     func emptyTableViewData() -> EasyEmptyKitModel?
 }
-
 
