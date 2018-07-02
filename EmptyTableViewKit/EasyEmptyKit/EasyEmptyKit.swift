@@ -92,7 +92,7 @@ extension UITableView {
             let sections = dataSource.numberOfSections?(in: self) ?? 1
             
             return itemsCount(in: sections, with: { (section) -> Int in
-                return dataSource.tableView(self, numberOfRowsInSection: sections)
+                return dataSource.tableView(self, numberOfRowsInSection: section)
             })
         }
         return 0
